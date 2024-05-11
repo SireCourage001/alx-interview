@@ -42,7 +42,7 @@ def minOperations(n):
         if remaining < clipboard:
             return 0
 
-        # if can't be devided
+        # if it can't be divided
         if remaining % pasted_chars != 0:
             # paste current clipboard
             pasted_chars += clipboard
@@ -59,6 +59,5 @@ def minOperations(n):
     # if got the desired result
     if pasted_chars == n:
         return counter
-    else:
+    elseii:
         return 0
-
