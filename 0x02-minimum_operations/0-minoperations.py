@@ -59,5 +59,5 @@ def minOperations(n):
     # if got the desired result
     if pasted_chars == n:
         return counter
-    elseii:
+    else:
         return 0
