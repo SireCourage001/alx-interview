@@ -24,14 +24,14 @@ try:
             counter = 0
             print('File size: {}'.format(total_size))
             for key, value in sorted(cache.items()):
-                if value != 0:
+                if value!= 0:
                     print('{}: {}'.format(key, value))
 
-except Exception as err:
-    pass
+except ValueError as e:
+    print("An error occurred: ", e)
 
 finally:
     print('File size: {}'.format(total_size))
     for key, value in sorted(cache.items()):
-        if value != 0:
+        if value!= 0:
             print('{}: {}'.format(key, value))
